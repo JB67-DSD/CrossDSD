@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#17202a}.title{font-size:25px;font-weight:650}.sub{font-size:14px;fill:#53606c}.axis{font-size:12px;fill:#53606c}.label{font-size:14px;font-weight:600}.legend{font-size:13px}.grid{stroke:#d9dee3;stroke-width:1}.frame{stroke:#75808a;fill:#fbfcfd}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text class="title" x="92" y="38">Error spectrum — B004 signal</text>
+<text class="sub" x="92" y="62">RMS error by frequency band after fractional alignment.</text>
+<rect class="frame" x="92" y="86" width="778" height="508"/>
+<line class="grid" x1="92" y1="594.00" x2="870" y2="594.00"/>
+<text class="axis" x="82" y="598.00" text-anchor="end">-187.6</text>
+<line class="grid" x1="92" y1="492.40" x2="870" y2="492.40"/>
+<text class="axis" x="82" y="496.40" text-anchor="end">-152.7</text>
+<line class="grid" x1="92" y1="390.80" x2="870" y2="390.80"/>
+<text class="axis" x="82" y="394.80" text-anchor="end">-117.8</text>
+<line class="grid" x1="92" y1="289.20" x2="870" y2="289.20"/>
+<text class="axis" x="82" y="293.20" text-anchor="end">-83.0</text>
+<line class="grid" x1="92" y1="187.60" x2="870" y2="187.60"/>
+<text class="axis" x="82" y="191.60" text-anchor="end">-48.1</text>
+<line class="grid" x1="92" y1="86.00" x2="870" y2="86.00"/>
+<text class="axis" x="82" y="90.00" text-anchor="end">-13.3</text>
+<line class="grid" x1="92.00" y1="86" x2="92.00" y2="594"/>
+<text class="axis" x="92.00" y="616" text-anchor="middle">10k</text>
+<line class="grid" x1="368.04" y1="86" x2="368.04" y2="594"/>
+<text class="axis" x="368.04" y="616" text-anchor="middle">25k</text>
+<line class="grid" x1="469.41" y1="86" x2="469.41" y2="594"/>
+<text class="axis" x="469.41" y="616" text-anchor="middle">35k</text>
+<line class="grid" x1="545.12" y1="86" x2="545.12" y2="594"/>
+<text class="axis" x="545.12" y="616" text-anchor="middle">45k</text>
+<line class="grid" x1="674.33" y1="86" x2="674.33" y2="594"/>
+<text class="axis" x="674.33" y="616" text-anchor="middle">69.1k</text>
+<line class="grid" x1="870.00" y1="86" x2="870.00" y2="594"/>
+<text class="axis" x="870.00" y="616" text-anchor="middle">132.3k</text>
+<polyline points="92.00,301.73 368.04,411.64 469.41,401.75 545.12,360.23 674.33,254.87 870.00,225.44" fill="none" stroke="#2e9d57" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="301.73" r="3" fill="#2e9d57"/>
+<circle cx="368.04" cy="411.64" r="3" fill="#2e9d57"/>
+<circle cx="469.41" cy="401.75" r="3" fill="#2e9d57"/>
+<circle cx="545.12" cy="360.23" r="3" fill="#2e9d57"/>
+<circle cx="674.33" cy="254.87" r="3" fill="#2e9d57"/>
+<circle cx="870.00" cy="225.44" r="3" fill="#2e9d57"/>
+<polyline points="92.00,257.73 368.04,430.59 469.41,447.35 545.12,437.90 674.33,391.79 870.00,267.71" fill="none" stroke="#d17a00" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="257.73" r="3" fill="#d17a00"/>
+<circle cx="368.04" cy="430.59" r="3" fill="#d17a00"/>
+<circle cx="469.41" cy="447.35" r="3" fill="#d17a00"/>
+<circle cx="545.12" cy="437.90" r="3" fill="#d17a00"/>
+<circle cx="674.33" cy="391.79" r="3" fill="#d17a00"/>
+<circle cx="870.00" cy="267.71" r="3" fill="#d17a00"/>
+<polyline points="92.00,273.11 368.04,318.60 469.41,268.31 545.12,239.53 674.33,226.51 870.00,544.84" fill="none" stroke="#1769aa" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="273.11" r="3" fill="#1769aa"/>
+<circle cx="368.04" cy="318.60" r="3" fill="#1769aa"/>
+<circle cx="469.41" cy="268.31" r="3" fill="#1769aa"/>
+<circle cx="545.12" cy="239.53" r="3" fill="#1769aa"/>
+<circle cx="674.33" cy="226.51" r="3" fill="#1769aa"/>
+<circle cx="870.00" cy="544.84" r="3" fill="#1769aa"/>
+<polyline points="92.00,298.49 368.04,411.61 469.41,401.73 545.12,360.21 674.33,252.97 870.00,170.74" fill="none" stroke="#c83d55" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="298.49" r="3" fill="#c83d55"/>
+<circle cx="368.04" cy="411.61" r="3" fill="#c83d55"/>
+<circle cx="469.41" cy="401.73" r="3" fill="#c83d55"/>
+<circle cx="545.12" cy="360.21" r="3" fill="#c83d55"/>
+<circle cx="674.33" cy="252.97" r="3" fill="#c83d55"/>
+<circle cx="870.00" cy="170.74" r="3" fill="#c83d55"/>
+<polyline points="92.00,264.44 368.04,430.51 469.41,447.06 545.12,437.78 674.33,391.98 870.00,279.19" fill="none" stroke="#607d8b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="264.44" r="3" fill="#607d8b"/>
+<circle cx="368.04" cy="430.51" r="3" fill="#607d8b"/>
+<circle cx="469.41" cy="447.06" r="3" fill="#607d8b"/>
+<circle cx="545.12" cy="437.78" r="3" fill="#607d8b"/>
+<circle cx="674.33" cy="391.98" r="3" fill="#607d8b"/>
+<circle cx="870.00" cy="279.19" r="3" fill="#607d8b"/>
+<polyline points="92.00,264.14 368.04,318.59 469.41,267.65 545.12,234.07 674.33,163.20 870.00,135.16" fill="none" stroke="#7d4ab5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="264.14" r="3" fill="#7d4ab5"/>
+<circle cx="368.04" cy="318.59" r="3" fill="#7d4ab5"/>
+<circle cx="469.41" cy="267.65" r="3" fill="#7d4ab5"/>
+<circle cx="545.12" cy="234.07" r="3" fill="#7d4ab5"/>
+<circle cx="674.33" cy="163.20" r="3" fill="#7d4ab5"/>
+<circle cx="870.00" cy="135.16" r="3" fill="#7d4ab5"/>
+<line x1="898" y1="108" x2="928" y2="108" stroke="#2e9d57" stroke-width="3"/>
+<text class="legend" x="938" y="113">AudioGate · DSD128</text>
+<line x1="898" y1="136" x2="928" y2="136" stroke="#d17a00" stroke-width="3"/>
+<text class="legend" x="938" y="141">AudioGate · DSD256</text>
+<line x1="898" y1="164" x2="928" y2="164" stroke="#1769aa" stroke-width="3"/>
+<text class="legend" x="938" y="169">AudioGate · DSD64</text>
+<line x1="898" y1="192" x2="928" y2="192" stroke="#c83d55" stroke-width="3"/>
+<text class="legend" x="938" y="197">FFmpeg · DSD128</text>
+<line x1="898" y1="220" x2="928" y2="220" stroke="#607d8b" stroke-width="3"/>
+<text class="legend" x="938" y="225">FFmpeg · DSD256</text>
+<line x1="898" y1="248" x2="928" y2="248" stroke="#7d4ab5" stroke-width="3"/>
+<text class="legend" x="938" y="253">FFmpeg · DSD64</text>
+<text class="label" x="481.0" y="654" text-anchor="middle">Representative band frequency (Hz)</text>
+<text class="label" transform="translate(24 340.0) rotate(-90)" text-anchor="middle">Error (dBFS)</text>
+</svg>

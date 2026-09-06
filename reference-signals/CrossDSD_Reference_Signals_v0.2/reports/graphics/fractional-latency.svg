@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="590" viewBox="0 0 980 590">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#17202a}.title{font-size:25px;font-weight:650}.sub{font-size:14px;fill:#53606c}.axis{font-size:12px;fill:#53606c}.value{font-size:13px;font-weight:600}.grid{stroke:#d9dee3;stroke-width:1}.frame{stroke:#75808a;fill:#fbfcfd}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text class="title" x="95" y="38">Measured fractional latency</text>
+<text class="sub" x="95" y="62">Alignment offset used to compare waveforms while accounting for sub-sample delay.</text>
+<rect class="frame" x="95" y="90" width="840" height="385"/>
+<line class="grid" x1="95" y1="475.00" x2="935" y2="475.00"/>
+<text class="axis" x="85" y="479.00" text-anchor="end">0.0</text>
+<line class="grid" x1="95" y1="398.00" x2="935" y2="398.00"/>
+<text class="axis" x="85" y="402.00" text-anchor="end">1.5</text>
+<line class="grid" x1="95" y1="321.00" x2="935" y2="321.00"/>
+<text class="axis" x="85" y="325.00" text-anchor="end">2.9</text>
+<line class="grid" x1="95" y1="244.00" x2="935" y2="244.00"/>
+<text class="axis" x="85" y="248.00" text-anchor="end">4.4</text>
+<line class="grid" x1="95" y1="167.00" x2="935" y2="167.00"/>
+<text class="axis" x="85" y="171.00" text-anchor="end">5.9</text>
+<line class="grid" x1="95" y1="90.00" x2="935" y2="90.00"/>
+<text class="axis" x="85" y="94.00" text-anchor="end">7.4</text>
+<rect x="121.60" y="364.64" width="86.80" height="110.36" fill="#2e9d57" rx="3"/>
+<text class="value" x="165.00" y="356.64" text-anchor="middle">2.113</text>
+<text class="axis" x="165.00" y="499" text-anchor="middle">DSD128</text>
+<text class="axis" transform="translate(165.00 517) rotate(-35)" text-anchor="end">AudioGate</text>
+<rect x="261.60" y="332.15" width="86.80" height="142.85" fill="#d17a00" rx="3"/>
+<text class="value" x="305.00" y="324.15" text-anchor="middle">2.734</text>
+<text class="axis" x="305.00" y="499" text-anchor="middle">DSD256</text>
+<text class="axis" transform="translate(305.00 517) rotate(-35)" text-anchor="end">AudioGate</text>
+<rect x="401.60" y="409.03" width="86.80" height="65.97" fill="#1769aa" rx="3"/>
+<text class="value" x="445.00" y="401.03" text-anchor="middle">1.263</text>
+<text class="axis" x="445.00" y="499" text-anchor="middle">DSD64</text>
+<text class="axis" transform="translate(445.00 517) rotate(-35)" text-anchor="end">AudioGate</text>
+<rect x="541.60" y="261.55" width="86.80" height="213.45" fill="#c83d55" rx="3"/>
+<text class="value" x="585.00" y="253.55" text-anchor="middle">4.086</text>
+<text class="axis" x="585.00" y="499" text-anchor="middle">DSD128</text>
+<text class="axis" transform="translate(585.00 517) rotate(-35)" text-anchor="end">FFmpeg</text>
+<rect x="681.60" y="283.11" width="86.80" height="191.89" fill="#607d8b" rx="3"/>
+<text class="value" x="725.00" y="275.11" text-anchor="middle">3.673</text>
+<text class="axis" x="725.00" y="499" text-anchor="middle">DSD256</text>
+<text class="axis" transform="translate(725.00 517) rotate(-35)" text-anchor="end">FFmpeg</text>
+<rect x="821.60" y="148.73" width="86.80" height="326.27" fill="#7d4ab5" rx="3"/>
+<text class="value" x="865.00" y="140.73" text-anchor="middle">6.246</text>
+<text class="axis" x="865.00" y="499" text-anchor="middle">DSD64</text>
+<text class="axis" transform="translate(865.00 517) rotate(-35)" text-anchor="end">FFmpeg</text>
+<text class="axis" transform="translate(24 282.5) rotate(-90)" text-anchor="middle">DXD samples</text>
+</svg>

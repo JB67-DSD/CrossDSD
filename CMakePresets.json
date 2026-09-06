@@ -1,0 +1,70 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "windows-x64",
+      "displayName": "Windows x64 - MSVC",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build/windows-x64",
+      "cacheVariables": {
+        "CROSSDSD_BUILD_SHARED": "ON",
+        "CROSSDSD_BUILD_TESTS": "ON",
+        "CROSSDSD_ENABLE_CHANNEL_THREADS": "ON",
+        "CROSSDSD_ENABLE_METAL": "OFF",
+        "CROSSDSD_USE_ACCELERATE": "OFF"
+      }
+    },
+    {
+      "name": "windows-arm64",
+      "displayName": "Windows ARM64 - MSVC",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "ARM64",
+      "binaryDir": "${sourceDir}/build/windows-arm64",
+      "cacheVariables": {
+        "CROSSDSD_BUILD_SHARED": "ON",
+        "CROSSDSD_BUILD_TESTS": "ON",
+        "CROSSDSD_ENABLE_CHANNEL_THREADS": "ON",
+        "CROSSDSD_ENABLE_METAL": "OFF",
+        "CROSSDSD_USE_ACCELERATE": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-x64-release",
+      "configurePreset": "windows-x64",
+      "configuration": "Release",
+      "jobs": 0
+    },
+    {
+      "name": "windows-arm64-release",
+      "configurePreset": "windows-arm64",
+      "configuration": "Release",
+      "jobs": 0
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-x64-release",
+      "configurePreset": "windows-x64",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "windows-arm64-release",
+      "configurePreset": "windows-arm64",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

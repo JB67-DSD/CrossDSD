@@ -1,0 +1,22 @@
+{
+  "suite": "CrossDSD Benchmark Suite",
+  "version": "0.2.0",
+  "status": "pass",
+  "audio_files": 217,
+  "manifest_records": 217,
+  "decoder_branches": 186,
+  "reports": {
+    "audio_validation": {
+      "status": "pass",
+      "records": 93
+    },
+    "decoder_comparison": {
+      "status": "pass",
+      "records": 93
+    },
+    "advanced_metrics": {
+      "status": "pass",
+      "records": 186
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "gain": {
+    "editing_target_db": 0.0,
+    "raw_dsd_target_db": -6.0206,
+    "pass_tolerance_db": 0.01,
+    "warning_tolerance_db": 0.05
+  },
+  "phase": {
+    "pass_error_degrees": 0.1,
+    "warning_error_degrees": 1.0
+  },
+  "audible_frequency_response": {
+    "band_hz": [20, 20000],
+    "pass_tolerance_db": 0.1,
+    "warning_tolerance_db": 0.25
+  },
+  "thdn_1khz_db": {
+    "DSD64": {
+      "pass_max": -95.0,
+      "warning_max": -92.0
+    },
+    "DSD128": {
+      "pass_max": -102.0,
+      "warning_max": -99.0
+    },
+    "DSD256": {
+      "pass_max": -105.0,
+      "warning_max": -102.0
+    }
+  },
+  "group_delay": {
+    "pass_absolute_samples": 0.5,
+    "warning_absolute_samples": 1.0
+  },
+  "spectral_regression": {
+    "warning_above_reference_db": 3.0,
+    "failure_above_reference_db": 6.0
+  },
+  "hard_failures": [
+    "missing_file",
+    "checksum_mismatch",
+    "channel_reversal",
+    "non_finite_sample",
+    "clipping"
+  ]
+}

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#17202a}.title{font-size:25px;font-weight:650}.sub{font-size:14px;fill:#53606c}.axis{font-size:12px;fill:#53606c}.label{font-size:14px;font-weight:600}.legend{font-size:13px}.grid{stroke:#d9dee3;stroke-width:1}.frame{stroke:#75808a;fill:#fbfcfd}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text class="title" x="92" y="38">Response to sinusoidal test signals</text>
+<text class="sub" x="92" y="62">Level change after a PCM → DSD → PCM round trip; 0 dB is ideal.</text>
+<rect class="frame" x="92" y="86" width="778" height="508"/>
+<line class="grid" x1="92" y1="594.00" x2="870" y2="594.00"/>
+<text class="axis" x="82" y="598.00" text-anchor="end">-77.0</text>
+<line class="grid" x1="92" y1="492.40" x2="870" y2="492.40"/>
+<text class="axis" x="82" y="496.40" text-anchor="end">-59.9</text>
+<line class="grid" x1="92" y1="390.80" x2="870" y2="390.80"/>
+<text class="axis" x="82" y="394.80" text-anchor="end">-42.9</text>
+<line class="grid" x1="92" y1="289.20" x2="870" y2="289.20"/>
+<text class="axis" x="82" y="293.20" text-anchor="end">-25.8</text>
+<line class="grid" x1="92" y1="187.60" x2="870" y2="187.60"/>
+<text class="axis" x="82" y="191.60" text-anchor="end">-8.8</text>
+<line class="grid" x1="92" y1="86.00" x2="870" y2="86.00"/>
+<text class="axis" x="82" y="90.00" text-anchor="end">8.2</text>
+<line class="grid" x1="92.00" y1="86" x2="92.00" y2="594"/>
+<text class="axis" x="92.00" y="616" text-anchor="middle">20</text>
+<line class="grid" x1="242.97" y1="86" x2="242.97" y2="594"/>
+<text class="axis" x="242.97" y="616" text-anchor="middle">100</text>
+<line class="grid" x1="381.95" y1="86" x2="381.95" y2="594"/>
+<text class="axis" x="381.95" y="616" text-anchor="middle">440</text>
+<line class="grid" x1="458.96" y1="86" x2="458.96" y2="594"/>
+<text class="axis" x="458.96" y="616" text-anchor="middle">1k</text>
+<line class="grid" x1="674.94" y1="86" x2="674.94" y2="594"/>
+<text class="axis" x="674.94" y="616" text-anchor="middle">10k</text>
+<line class="grid" x1="730.08" y1="86" x2="730.08" y2="594"/>
+<text class="axis" x="730.08" y="616" text-anchor="middle">18k</text>
+<line class="grid" x1="739.96" y1="86" x2="739.96" y2="594"/>
+<text class="axis" x="739.96" y="616" text-anchor="middle">20k</text>
+<line class="grid" x1="748.90" y1="86" x2="748.90" y2="594"/>
+<text class="axis" x="748.90" y="616" text-anchor="middle">22k</text>
+<line class="grid" x1="778.00" y1="86" x2="778.00" y2="594"/>
+<text class="axis" x="778.00" y="616" text-anchor="middle">30k</text>
+<line class="grid" x1="804.98" y1="86" x2="804.98" y2="594"/>
+<text class="axis" x="804.98" y="616" text-anchor="middle">40k</text>
+<line class="grid" x1="825.91" y1="86" x2="825.91" y2="594"/>
+<text class="axis" x="825.91" y="616" text-anchor="middle">50k</text>
+<line class="grid" x1="870.00" y1="86" x2="870.00" y2="594"/>
+<text class="axis" x="870.00" y="616" text-anchor="middle">80k</text>
+<polyline points="92.00,135.17 242.97,135.17 381.95,135.17 458.96,135.17 674.94,135.17 730.08,135.18 739.96,135.19 748.90,135.20 778.00,135.21 804.98,135.26 825.91,135.38 870.00,140.27" fill="none" stroke="#2e9d57" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="135.17" r="3" fill="#2e9d57"/>
+<circle cx="242.97" cy="135.17" r="3" fill="#2e9d57"/>
+<circle cx="381.95" cy="135.17" r="3" fill="#2e9d57"/>
+<circle cx="458.96" cy="135.17" r="3" fill="#2e9d57"/>
+<circle cx="674.94" cy="135.17" r="3" fill="#2e9d57"/>
+<circle cx="730.08" cy="135.18" r="3" fill="#2e9d57"/>
+<circle cx="739.96" cy="135.19" r="3" fill="#2e9d57"/>
+<circle cx="748.90" cy="135.20" r="3" fill="#2e9d57"/>
+<circle cx="778.00" cy="135.21" r="3" fill="#2e9d57"/>
+<circle cx="804.98" cy="135.26" r="3" fill="#2e9d57"/>
+<circle cx="825.91" cy="135.38" r="3" fill="#2e9d57"/>
+<circle cx="870.00" cy="140.27" r="3" fill="#2e9d57"/>
+<polyline points="92.00,135.17 242.97,135.17 381.95,135.17 458.96,135.17 674.94,135.17 730.08,135.17 739.96,135.18 748.90,135.18 778.00,135.18 804.98,135.18 825.91,135.20 870.00,135.38" fill="none" stroke="#d17a00" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="135.17" r="3" fill="#d17a00"/>
+<circle cx="242.97" cy="135.17" r="3" fill="#d17a00"/>
+<circle cx="381.95" cy="135.17" r="3" fill="#d17a00"/>
+<circle cx="458.96" cy="135.17" r="3" fill="#d17a00"/>
+<circle cx="674.94" cy="135.17" r="3" fill="#d17a00"/>
+<circle cx="730.08" cy="135.17" r="3" fill="#d17a00"/>
+<circle cx="739.96" cy="135.18" r="3" fill="#d17a00"/>
+<circle cx="748.90" cy="135.18" r="3" fill="#d17a00"/>
+<circle cx="778.00" cy="135.18" r="3" fill="#d17a00"/>
+<circle cx="804.98" cy="135.18" r="3" fill="#d17a00"/>
+<circle cx="825.91" cy="135.20" r="3" fill="#d17a00"/>
+<circle cx="870.00" cy="135.38" r="3" fill="#d17a00"/>
+<polyline points="92.00,135.17 242.97,135.17 381.95,135.16 458.96,135.17 674.94,135.17 730.08,135.20 739.96,135.32 748.90,135.38 778.00,135.46 804.98,136.12 825.91,140.27 870.00,544.84" fill="none" stroke="#1769aa" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="135.17" r="3" fill="#1769aa"/>
+<circle cx="242.97" cy="135.17" r="3" fill="#1769aa"/>
+<circle cx="381.95" cy="135.16" r="3" fill="#1769aa"/>
+<circle cx="458.96" cy="135.17" r="3" fill="#1769aa"/>
+<circle cx="674.94" cy="135.17" r="3" fill="#1769aa"/>
+<circle cx="730.08" cy="135.20" r="3" fill="#1769aa"/>
+<circle cx="739.96" cy="135.32" r="3" fill="#1769aa"/>
+<circle cx="748.90" cy="135.38" r="3" fill="#1769aa"/>
+<circle cx="778.00" cy="135.46" r="3" fill="#1769aa"/>
+<circle cx="804.98" cy="136.12" r="3" fill="#1769aa"/>
+<circle cx="825.91" cy="140.27" r="3" fill="#1769aa"/>
+<circle cx="870.00" cy="544.84" r="3" fill="#1769aa"/>
+<polyline points="92.00,171.06 242.97,171.06 381.95,171.06 458.96,171.06 674.94,171.06 730.08,171.07 739.96,171.08 748.90,171.09 778.00,171.10 804.98,171.15 825.91,171.28 870.00,173.73" fill="none" stroke="#c83d55" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="171.06" r="3" fill="#c83d55"/>
+<circle cx="242.97" cy="171.06" r="3" fill="#c83d55"/>
+<circle cx="381.95" cy="171.06" r="3" fill="#c83d55"/>
+<circle cx="458.96" cy="171.06" r="3" fill="#c83d55"/>
+<circle cx="674.94" cy="171.06" r="3" fill="#c83d55"/>
+<circle cx="730.08" cy="171.07" r="3" fill="#c83d55"/>
+<circle cx="739.96" cy="171.08" r="3" fill="#c83d55"/>
+<circle cx="748.90" cy="171.09" r="3" fill="#c83d55"/>
+<circle cx="778.00" cy="171.10" r="3" fill="#c83d55"/>
+<circle cx="804.98" cy="171.15" r="3" fill="#c83d55"/>
+<circle cx="825.91" cy="171.28" r="3" fill="#c83d55"/>
+<circle cx="870.00" cy="173.73" r="3" fill="#c83d55"/>
+<polyline points="92.00,171.06 242.97,171.06 381.95,171.06 458.96,171.06 674.94,171.06 730.08,171.06 739.96,171.07 748.90,171.07 778.00,171.07 804.98,171.08 825.91,171.09 870.00,171.28" fill="none" stroke="#607d8b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="171.06" r="3" fill="#607d8b"/>
+<circle cx="242.97" cy="171.06" r="3" fill="#607d8b"/>
+<circle cx="381.95" cy="171.06" r="3" fill="#607d8b"/>
+<circle cx="458.96" cy="171.06" r="3" fill="#607d8b"/>
+<circle cx="674.94" cy="171.06" r="3" fill="#607d8b"/>
+<circle cx="730.08" cy="171.06" r="3" fill="#607d8b"/>
+<circle cx="739.96" cy="171.07" r="3" fill="#607d8b"/>
+<circle cx="748.90" cy="171.07" r="3" fill="#607d8b"/>
+<circle cx="778.00" cy="171.07" r="3" fill="#607d8b"/>
+<circle cx="804.98" cy="171.08" r="3" fill="#607d8b"/>
+<circle cx="825.91" cy="171.09" r="3" fill="#607d8b"/>
+<circle cx="870.00" cy="171.28" r="3" fill="#607d8b"/>
+<polyline points="92.00,171.06 242.97,171.06 381.95,171.05 458.96,171.06 674.94,171.06 730.08,171.09 739.96,171.22 748.90,171.28 778.00,171.36 804.98,171.97 825.91,173.73 870.00,213.54" fill="none" stroke="#7d4ab5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="92.00" cy="171.06" r="3" fill="#7d4ab5"/>
+<circle cx="242.97" cy="171.06" r="3" fill="#7d4ab5"/>
+<circle cx="381.95" cy="171.05" r="3" fill="#7d4ab5"/>
+<circle cx="458.96" cy="171.06" r="3" fill="#7d4ab5"/>
+<circle cx="674.94" cy="171.06" r="3" fill="#7d4ab5"/>
+<circle cx="730.08" cy="171.09" r="3" fill="#7d4ab5"/>
+<circle cx="739.96" cy="171.22" r="3" fill="#7d4ab5"/>
+<circle cx="748.90" cy="171.28" r="3" fill="#7d4ab5"/>
+<circle cx="778.00" cy="171.36" r="3" fill="#7d4ab5"/>
+<circle cx="804.98" cy="171.97" r="3" fill="#7d4ab5"/>
+<circle cx="825.91" cy="173.73" r="3" fill="#7d4ab5"/>
+<circle cx="870.00" cy="213.54" r="3" fill="#7d4ab5"/>
+<line x1="898" y1="108" x2="928" y2="108" stroke="#2e9d57" stroke-width="3"/>
+<text class="legend" x="938" y="113">AudioGate · DSD128</text>
+<line x1="898" y1="136" x2="928" y2="136" stroke="#d17a00" stroke-width="3"/>
+<text class="legend" x="938" y="141">AudioGate · DSD256</text>
+<line x1="898" y1="164" x2="928" y2="164" stroke="#1769aa" stroke-width="3"/>
+<text class="legend" x="938" y="169">AudioGate · DSD64</text>
+<line x1="898" y1="192" x2="928" y2="192" stroke="#c83d55" stroke-width="3"/>
+<text class="legend" x="938" y="197">FFmpeg · DSD128</text>
+<line x1="898" y1="220" x2="928" y2="220" stroke="#607d8b" stroke-width="3"/>
+<text class="legend" x="938" y="225">FFmpeg · DSD256</text>
+<line x1="898" y1="248" x2="928" y2="248" stroke="#7d4ab5" stroke-width="3"/>
+<text class="legend" x="938" y="253">FFmpeg · DSD64</text>
+<text class="label" x="481.0" y="654" text-anchor="middle">Frequency (Hz)</text>
+<text class="label" transform="translate(24 340.0) rotate(-90)" text-anchor="middle">Level change (dB)</text>
+</svg>

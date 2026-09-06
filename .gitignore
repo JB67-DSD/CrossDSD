@@ -1,0 +1,10 @@
+.DS_Store
+/build*/
+/install*/
+__pycache__/
+*.py[cod]
+# Binary assets are uploaded separately to GitHub Releases.
+/releases/**/*.zip
+/releases/**/*.tar.gz
+/reference-signals/CrossDSD_Reference_Signals_v0.2/**/*.wav
+/reference-signals/CrossDSD_Reference_Signals_v0.2/**/*.dsf

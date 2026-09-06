@@ -1,0 +1,8 @@
+* text=auto
+*.wav -text
+*.dsf -text
+*.zip -text
+*.gz -text
+
+# Preserve the reference corpus bytes covered by its SHA-256 index.
+/reference-signals/CrossDSD_Reference_Signals_v0.2/** -text
