@@ -1,5 +1,13 @@
 # Library changelog
 
+## 1.1.0 — continuous Metal decoding
+
+- Decode DSF to DXD on Metal in bounded blocks with continuous filter state.
+- Decode long DSF files beyond the previous 32-bit sample count and whole-file buffer limits, with automatic RF64 output when required.
+- Support fixed attenuation with explicitly selected Metal in the C file API.
+- Report the exact WAV or RF64 file size, including extensible headers.
+- Validate both filter profiles against CPU on the reference corpus and verify a complete RF64 output over 4 GiB.
+
 ## 1.0.0 RC1 — audio engine
 
 - Decode DSD64, DSD128, DSD256 and DSD512 to float32 DXD at 352.8 kHz.

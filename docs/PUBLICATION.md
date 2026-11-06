@@ -8,7 +8,7 @@ Version the source code, CMake files, tests, examples, documentation, licenses, 
 
 ## Separate downloads
 
-Attach the five archives listed in [releases/README.md](../releases/README.md) to a Release, together with `releases/SHA256SUMS.txt`. For future versions, update the download links to the corresponding release tag.
+Attach the platform SDKs and source archive for the release, together with its SHA-256 checksum index. The [downloads page](../releases/README.md) links to the corresponding tags.
 
 Sources can also be obtained from the supplied standalone source archive or from GitHub-generated source archives. The audio corpus remains a separate download to extract into `reference-signals/`.
 
@@ -16,7 +16,9 @@ This arrangement avoids adding approximately 2.5 GB of audio to Git history. Git
 
 ## Version
 
-The engine and SDK version remains **1.0.0 RC1**. RC2 fixes concern the graphical applications, which are not included in this repository. The `Apache-2.0` suffix identifies the public archive preparation and does not indicate a new audio engine.
+The current engine and macOS SDK version is **1.1.0**. The Windows RC1 SDKs
+are available with their original release. Graphical applications follow a
+separate release process.
 
 ## Reproduce an SDK
 

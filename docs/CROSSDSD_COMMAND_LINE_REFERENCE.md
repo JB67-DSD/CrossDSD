@@ -1,4 +1,4 @@
-# CrossDSD 1.0.0 — command-line reference
+# CrossDSD 1.1.0 — command-line reference
 
 The `crossdsd` executable provides five audio operations and a version command. With no arguments, it displays help. Paths may contain spaces and must be quoted in that case.
 
@@ -18,7 +18,7 @@ The output is an IEEE float32 WAV or RF64 file at 352.8 kHz. Levels are neither 
 
 - `--profile=standard|raw`: reconstruction filter; defaults to `standard`.
 - `--container=auto|wav|rf64`: output container; defaults to `auto`.
-- `--backend=auto|cpu|metal`: processing backend; defaults to `auto`. Metal is available only on macOS; Windows uses the CPU.
+- `--backend=auto|cpu|metal`: processing backend; defaults to `auto`. Metal is available on macOS. On Windows, select `auto` or `cpu`. Metal processes long DSF recordings in continuous blocks. Explicit `metal` selection reports an error if Metal is unavailable.
 - `--report=FILE`: JSON report; `--report=-` writes it to standard output.
 - `--overwrite`: allows an existing output file to be replaced.
 

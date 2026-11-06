@@ -21,6 +21,7 @@
 #include "crossdsd/convert.h"
 #include "metadata_trace.h"
 #include "platform_file.h"
+#include "wave_writer_internal.h"
 
 #include <algorithm>
 #include <chrono>
@@ -121,11 +122,10 @@ crossdsd_result crossdsd_decode_file(
     if (result != CROSSDSD_OK) return result;
 
 #if defined(CROSSDSD_ENABLE_METAL)
-    const bool request_metal = !config->fixed_gain_enabled && (
-        config->backend == CROSSDSD_BACKEND_METAL ||
-        (config->backend == CROSSDSD_BACKEND_AUTO &&
+    const bool request_metal = config->backend == CROSSDSD_BACKEND_METAL ||
+        (!config->fixed_gain_enabled && config->backend == CROSSDSD_BACKEND_AUTO &&
          stream.duration_seconds >= 0.25 &&
-         crossdsd_metal_backend_available()));
+         crossdsd_metal_backend_available());
     if (request_metal) {
         const auto metal_result = crossdsd_decode_file_metal(
             input_path, output_path, config, report, error);
@@ -312,6 +312,7 @@ crossdsd_result crossdsd_decode_file(
         crossdsd_wave_writer_info writer_info{};
         writer_info.struct_size = sizeof(writer_info);
         crossdsd_wave_writer_get_info(writer.value, &writer_info);
+        const auto output_size = crossdsd::wave_writer_size_bytes(*writer.value);
         result = crossdsd_wave_writer_close(writer.value, error);
         writer.closed = true;
         writer.value = nullptr;
@@ -331,9 +332,7 @@ crossdsd_result crossdsd_decode_file(
         value.input_samples_per_channel =
             stream.sample_count_per_channel;
         value.output_frames = writer_info.frame_count;
-        value.output_size_bytes =
-            writer_info.data_size_bytes + writer_info.metadata_size_bytes +
-            (writer_info.container == CROSSDSD_WAVE_RF64 ? 92u : 56u);
+        value.output_size_bytes = output_size;
         value.metadata_size_bytes =
             stream.metadata_status == CROSSDSD_METADATA_ID3
                 ? stream.metadata_size

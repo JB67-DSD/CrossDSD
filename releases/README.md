@@ -2,6 +2,14 @@
 
 The archives below contain only the library, its command-line tools and developer resources.
 
+## 1.1.0
+
+- [Universal macOS SDK](https://github.com/JB67-DSD/CrossDSD/releases/download/v1.1.0/CrossDSD-macOS-SDK-1.1.0-universal-Apache-2.0.zip) for macOS 13 or later, with Apple Silicon and x86_64 slices.
+- [Standalone source archive](https://github.com/JB67-DSD/CrossDSD/releases/download/v1.1.0/CrossDSD-Source-1.1.0-Apache-2.0.tar.gz) for building on macOS or Windows.
+- [SHA-256 checksums](https://github.com/JB67-DSD/CrossDSD/releases/download/v1.1.0/SHA256SUMS.txt) and [validation results](../docs/VALIDATION_1.1.0.md).
+
+## 1.0.0 RC1 archives
+
 | Platform | Archive | Contents |
 | --- | --- | --- |
 | macOS 13+, Apple Silicon and Intel | [Universal SDK](https://github.com/JB67-DSD/CrossDSD/releases/download/v1.0.0-rc1/CrossDSD-macOS-SDK-1.0.0-RC1-universal-Apache-2.0.zip) | `crossdsd` command, tools, static and shared libraries, headers, CMake, examples and documentation |
@@ -12,7 +20,7 @@ The archives below contain only the library, its command-line tools and develope
 
 Download the archives from the [CrossDSD 1.0.0 RC1 release](https://github.com/JB67-DSD/CrossDSD/releases/tag/v1.0.0-rc1) in this repository. GitHub hosts both the source code and all release assets.
 
-## Provenance and validation
+## RC1 provenance and validation
 
 The macOS SDK was rebuilt on September 5, 2026 from the public source directory. It contains `arm64` and `x86_64` architectures, with a minimum target of macOS 13, Metal enabled and channel parallelism enabled. All 19 tests passed on Apple Silicon. Conversion examples were also built and executed. The Intel binary responds to `--version` under Rosetta; it has not been validated on a physical Intel Mac.
 
@@ -22,7 +30,7 @@ The v0.2 corpus audio and numerical results are unchanged. During initial prepar
 
 Repository and SDK documentation are provided in English only. The documentation update does not modify the SDK binaries.
 
-## Integrity
+## RC1 integrity
 
 Download [SHA256SUMS.txt](https://github.com/JB67-DSD/CrossDSD/releases/download/v1.0.0-rc1/SHA256SUMS.txt) and the five archives into the same directory, then run:
 

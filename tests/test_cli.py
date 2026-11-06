@@ -68,7 +68,7 @@ def write_float_wave(path: Path, frames: int = 7056) -> None:
 def main() -> int:
     tool = Path(sys.argv[1]).resolve()
     suite = Path(sys.argv[2]).resolve()
-    assert run(str(tool), "--version").stdout.strip() == "CrossDSD 1.0.0"
+    assert run(str(tool), "--version").stdout.strip() == "CrossDSD 1.1.0"
     source = suite / "AudioGate64/A002_single_impulse_-6dBFS.dsf"
     with tempfile.TemporaryDirectory() as directory_name:
         directory = Path(directory_name)
@@ -126,6 +126,7 @@ def main() -> int:
             "--backend=cpu", f"--report={report_path}",
         )
         report = json.loads(report_path.read_text(encoding="utf-8"))
+        assert report["output_size_bytes"] == standard.stat().st_size
         assert report["sample_format"] == "float32"
         assert report["output_rate_hz"] == 352_800
         assert report["profile"] == "standard"

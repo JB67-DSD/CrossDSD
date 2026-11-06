@@ -1,6 +1,6 @@
-# Build and integrate CrossDSD 1.0.0 RC1
+# Build and integrate CrossDSD 1.1.0
 
-This repository contains the library and its command-line tools. The engine is version 1.0.0 RC1. Graphical applications are distributed separately.
+This repository contains the library and its command-line tools. The engine is version 1.1.0. Graphical applications are distributed separately.
 
 ## Prerequisites
 
@@ -62,7 +62,7 @@ After installing the SDK:
 ```cmake
 cmake_minimum_required(VERSION 3.20)
 project(MyIntegration LANGUAGES C CXX)
-find_package(CrossDSD 1.0 REQUIRED)
+find_package(CrossDSD 1.1 REQUIRED)
 add_executable(my_tool main.c)
 target_link_libraries(my_tool PRIVATE CrossDSD::formats-static)
 set_property(TARGET my_tool PROPERTY LINKER_LANGUAGE CXX)

@@ -9,7 +9,7 @@
 | Read and write audio containers | [`formats.h`](../include/crossdsd/formats.h), [`audio.h`](../include/crossdsd/audio.h) | DSF, WAV/RF64 and AIFF readers and writers, as supported by each interface |
 | Integrate individual DSP stages | [`dsp.h`](../include/crossdsd/dsp.h) | Decoder, upsampler and modulators |
 
-The declarations and comments in these headers are the exact reference for the supplied version. API version numbers are: formats 1, audio 4, DSP 7, conversion 9 and streaming 1. They are distinct from the software version (1.0.0).
+The declarations and comments in these headers are the exact reference for the supplied version. API version numbers are: formats 1, audio 4, DSP 7, conversion 9 and streaming 1. They are distinct from the software version (1.1.0).
 
 ## Make your first call
 

@@ -51,7 +51,7 @@ This design allows long recordings to be processed progressively without loading
 
 ### Calculation precision and filtering
 
-The audio processing core uses double precision, or 64-bit floating point. Output DXD files use 32-bit floating point. This distinction maintains high precision during calculations while producing files suited to audio editing software.
+The CPU audio processing core uses double precision, or 64-bit floating point. Metal decoding and output DXD files use 32-bit floating point. This distinction maintains high precision during calculations while producing files suited to audio editing software.
 
 DSD decoding uses a sequence of linear-phase digital filters and sample-rate reductions. The Standard profile attenuates ultrasonic content with a transition band from 20 to 40 kHz. The Raw profile retains a wider bandwidth, up to 150 kHz, while preserving the filtering required for conversion to 352.8 kHz.
 
@@ -75,7 +75,7 @@ Analysis measures the peaks of the reconstructed audio signal after filtering. A
 
 ### Portability and validation
 
-CrossDSD has a portable CPU engine. On Apple platforms, optional acceleration uses Accelerate/vDSP and, for file decoding, Metal. Windows builds use the CPU engine. Parallel channel processing can also be enabled.
+CrossDSD has a portable CPU engine. On Apple platforms, optional acceleration uses Accelerate/vDSP and, for file decoding, Metal. Windows builds use the CPU engine. Parallel channel processing can also be enabled. Since 1.1.0, the Metal file decoder maintains filter state between blocks and bounds its audio buffers independently of recording length. See the [1.1.0 validation results](docs/VALIDATION_1.1.0.md).
 
 Processing choices are documented through automated tests, reference signals and measurement reports. These resources allow developers to examine algorithm behaviour, reproduce checks and verify changes to the library.
 

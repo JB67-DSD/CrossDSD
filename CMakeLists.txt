@@ -15,7 +15,7 @@
 
 cmake_minimum_required(VERSION 3.20)
 
-project(CrossDSDFormats VERSION 1.0.0 LANGUAGES C CXX)
+project(CrossDSDFormats VERSION 1.1.0 LANGUAGES C CXX)
 
 if(WIN32)
     add_compile_definitions(NOMINMAX WIN32_LEAN_AND_MEAN)
@@ -323,6 +323,13 @@ if(CROSSDSD_BUILD_TESTS)
         NAME crossdsd-aiff-to-dxd-unit COMMAND crossdsd-aiff-to-dxd-tests)
 
 
+    if(CROSSDSD_ENABLE_METAL)
+        add_executable(crossdsd-metal-decode-tests tests/test_metal_decode.cpp)
+        target_link_libraries(crossdsd-metal-decode-tests PRIVATE CrossDSD::formats-static)
+        add_test(NAME crossdsd-metal-decode-unit COMMAND crossdsd-metal-decode-tests)
+        set_tests_properties(crossdsd-metal-decode-unit PROPERTIES SKIP_RETURN_CODE 77)
+    endif()
+
     set(CROSSDSD_REFERENCE_SIGNALS_DIR
         "${CMAKE_CURRENT_SOURCE_DIR}/reference-signals/CrossDSD_Reference_Signals_v0.2"
         CACHE PATH "Path to the complete reference signal corpus")
@@ -385,6 +392,7 @@ install(FILES
     docs/CROSSDSD_WINDOWS_BUILD.md
     docs/GETTING_STARTED.md
     docs/API_GUIDE.md
+    docs/VALIDATION_1.1.0.md
     CHANGELOG.md
     LICENSE
     NOTICE.md
@@ -397,7 +405,7 @@ set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
 if(WIN32)
     set(CPACK_GENERATOR "ZIP")
     set(CPACK_PACKAGE_FILE_NAME
-        "CrossDSD-${PROJECT_VERSION}-RC1-${CMAKE_SYSTEM_PROCESSOR}")
+        "CrossDSD-${PROJECT_VERSION}-${CMAKE_SYSTEM_PROCESSOR}")
 else()
     set(CPACK_GENERATOR "TGZ")
 endif()

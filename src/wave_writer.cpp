@@ -19,6 +19,7 @@
  */
 
 #include "crossdsd/audio.h"
+#include "wave_writer_internal.h"
 #include "platform_file.h"
 
 #include <bit>
@@ -184,6 +185,11 @@ struct crossdsd_wave_writer {
     uint64_t fact_sample_offset = 0;
     uint64_t data_size_offset = 0;
 };
+
+uint64_t crossdsd::wave_writer_size_bytes(const crossdsd_wave_writer& writer) {
+    return writer.header_bytes + writer.info.data_size_bytes +
+           writer.info.metadata_size_bytes;
+}
 
 extern "C" {
 
@@ -362,25 +368,21 @@ crossdsd_result crossdsd_wave_writer_close(
     }
     FILE* file = writer->file;
     const auto info = writer->info;
-    const uint64_t header_bytes = writer->header_bytes;
+    const uint64_t riff_size = crossdsd::wave_writer_size_bytes(*writer) - 8u;
     const uint64_t fact_sample_offset = writer->fact_sample_offset;
     const uint64_t data_size_offset = writer->data_size_offset;
     writer->file = nullptr;
     bool ok = true;
     if (info.container == CROSSDSD_WAVE_RIFF) {
         ok = crossdsd::platform::seek_file(file, 4u) &&
-             write_u32(file, static_cast<uint32_t>(
-                                 header_bytes - 8u + info.data_size_bytes +
-                                 info.metadata_size_bytes)) &&
+             write_u32(file, static_cast<uint32_t>(riff_size)) &&
              crossdsd::platform::seek_file(file, fact_sample_offset) &&
              write_u32(file, static_cast<uint32_t>(info.frame_count)) &&
              crossdsd::platform::seek_file(file, data_size_offset) &&
              write_u32(file, static_cast<uint32_t>(info.data_size_bytes));
     } else {
         ok = crossdsd::platform::seek_file(file, 20u) &&
-             write_u64(
-                 file, header_bytes - 8u + info.data_size_bytes +
-                           info.metadata_size_bytes) &&
+             write_u64(file, riff_size) &&
              write_u64(file, info.data_size_bytes) &&
              write_u64(file, info.frame_count) &&
              crossdsd::platform::seek_file(file, fact_sample_offset) &&
